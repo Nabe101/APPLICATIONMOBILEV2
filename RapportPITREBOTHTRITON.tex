@@ -1,0 +1,92 @@
+\documentclass{article}
+
+\usepackage{a4wide}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage[babel=true]{csquotes} % guillemets français
+\usepackage{graphicx}
+\usepackage{float}
+\graphicspath{{Images/}}
+\usepackage{color}
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor=,urlcolor=blue}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage[
+backend=biber,
+style=alphabetic,
+sorting=ynt
+]{biblatex}
+
+\addbibresource{ProjetDevMob.bib}
+
+\title{Développement Mobile : \\ TOMO (Composition musicale}
+\author{PITREBOTH Jérémy, L3 Informatique \\ TRITON Maxime, L3 Informatique}
+
+\begin{document}
+
+\maketitle % pour écrire le titre
+
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+
+\label{section:intro} % pour faire référence à la section ailleurs (\ref{...} voir plus bas)
+ 
+Ce projet de l'UE Développement Mobile consiste à créer une application. Nous avons décidé d'en faire une application de composition musicale. Ce rapport verra en quoi consiste notre application, comment nous l'avons approchée, et les difficultés rencontrées pendant son développement. 
+
+
+\section{Description générale de l'application}
+L'application est composé de plusieurs pages. Une fois lancée, nous arrivons sur le menu. Du menu, nous pourrons observer les compositions enregistrées. Pour lancer une nouvelle composition, nous appuyons sur la croix en haut à droite de l'écran. La deuxième page s'ouvre alors et laisse place à la partie responsable de la composition, avec 9 boutons responsables de déclencher des sons.
+
+\section{Approche du projet}
+Notre idée du projet vient de notre recherche d'une application où il serait possible d'enregistrer de stocker des données. Nos préférences personnelles nous ont alors tourné vers l'option de jouer et d'enregistrer des sons, d'où l'idée de cette application de composition musicale. \\
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[c]{.3\linewidth}
+        \centering
+        \includegraphics[scale=0.7]{screens/1.PNG}
+        \caption{Page d'acceuil}
+    \end{minipage}
+\end{figure}
+
+\newpage
+
+\section{Application Android}
+
+Voici la page d'acceuil, servant à observer les potentielles compositions réalisées (dans le rectangle rouge), et pour en créer de nouvelles, avec le bouton en forme de croix.
+
+
+
+La deuxième page possède une partie à 9 boutons, responsable de jouer le son d'instruments : les trois boutons du haut joueront des percussions, et les six autres joueront le son d'un piano ou d'une guitare. L'appui d'un bouton allumera celui-ci d'une couleur, et jouera une note de l'instrument. \\
+Nous ne sommes pas arrivés à implémenter l'enregistrement du morceau dans l'application, mais voici les fonctions des autres boutons plus bas.
+Le slider règlera le tempo (ou la vitesse) du morceau. On a 4 boutons qui doivent enregistrer une séquence, stopper l'enregistrement, jouer le morceau enregistré, et stopper la lecture du morceau. Le bouton \textit{instruments} changera une fois appuyé l'instrument jouant les six boutons du bas, de la guitare au piano, et inversement. Le bouton save en haut à droite, aurait permi de sauvegarder les morceaux enregistrés et de le retrouver à la page d'acceuil.\\
+Le design de l'appli a été réalisé à l'aide de Figma.
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[c]{.3\linewidth}
+        \centering
+        \includegraphics[scale=0.7]{screens/2.PNG}
+        \caption{Page 2}
+    \end{minipage}
+\end{figure}
+
+\newpage
+
+
+\section{Contraintes}
+Nous avons rencontré différents contraintes et problèmes. Dû à des problèmes de temps et d'organisation, nous n'avons pas pu faire l'appli iOS. Nos précédentes échéances nous ont poussé à retarder le développement de l'application. Notre accès aux Mac étant limité, nous nous sommes concentrés sur l'application Android.
+
+\section{Bugs}
+Notre projet Android n'est pas terminé à cause du manque du sysème d'enregistrement, ce qui rend certains boutons obsolètes. 
+
+\section{Conclusion}
+Nous avons donc créé une application qui permet de jouer différents sons d'instruments.
+
+
+\end{document}
