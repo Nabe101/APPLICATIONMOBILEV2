@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">TOMOFINALV4</string>
+    <string name="waves">waves</string>
+    <string name="appname">appname</string>
+    <string name="plusmenu">plusmenu</string>
+    <string name="rectangle">rectangle</string>
+    <string name="compositions">compositions</string>
+    <string name="footer">footer</string>
+    <string name="your_compositions">Your compositions</string>
+    <string name="controlbox">controlbox</string>
+    <string name="play">play</string>
+    <string name="instrument">instrument</string>
+    <string name="percussion">Percussion</string>
+    <string name="my_composition">My composition</string>
+    <string name="box9">box9</string>
+    <string name="box8">box8</string>
+    <string name="box7">box7</string>
+    <string name="box6">box6</string>
+    <string name="box5">box5</string>
+    <string name="box4">box4</string>
+    <string name="box3">box3</string>
+    <string name="box2">box2</string>
+    <string name="box1">box1</string>
+</resources>
